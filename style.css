@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
 * {
     padding: 0;
@@ -104,6 +104,7 @@ header{
     transform: translate(150%);
     padding: 20px;
     gap: 15px;
+    border-bottom-left-radius:5px;
 }
 
 .open-cart{
@@ -142,25 +143,28 @@ header{
 .btn-close{
     width: 18px;
     height: 18px;
-    background: rgb(255,161,0);
     background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-close img{
     width: 7px;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
 }
 
 .cart h3{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 19px;
 }
 
 .cart p{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
 }
 
@@ -187,22 +191,119 @@ header{
 .btn-buy{
     appearance: none;
     padding: 12px;
-    background: rgb(255,161,0);
     background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
     border-radius: 10px;
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     border: none;
     width: 200px;
+    cursor: pointer;
 }
 
 .more-products{
     font-size: 10px;
     font-weight: 400;
     color: var(--light-grey);
+    cursor: pointer;
 }
 
-/* Falta estilar las cards del cart */
+.shoping-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0 40px 0;
+    align-items: center;
+}
+
+.cart-product{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 30%);
+}
+
+.cart-prod-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.cart-prod-img img{
+    height: 100%;
+    width: 100%;
+}
+/*   no puedo hacer que no se deformen las fotos sin ponerlas desde el url aca en css, lo que nos complica en js, alguno sabe como? 
+sino es en los assets tener las versiones rectangulares y las cuadradas de cada foto y en js vincularlas con diferentes ${}   */
+
+.cart-product-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart-product-data h6{
+    font-size: 11px;
+    font-weight: 400;
+    color: #606060;
+}
+
+.cart-product-data span{
+    font-size: 72px;
+    background: -webkit-linear-gradient(0deg, #ffa100, #fb103d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.quantity-regulator{
+    display: flex;
+    gap: 10px;
+}
+
+.quantity-handler{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+    color: #fff;   
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inactive{
+    background: linear-gradient(90deg, rgba(58,48,33,1) 0%, rgba(58,34,41,1) 100%);
+}
+
+.inactive p{
+    background: -webkit-linear-gradient(0deg, #ffa100, #fb103d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quantity-regulator p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.quantity-regulator .down p{
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    bottom: 2px;
+}
+.quantity-regulator .up p{
+    font-size: 18px;
+    font-weight: 400;
+}
 
 /* Fin header */

@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-:root{
+:root {
     --dark-grey: #121414;
     --medium-grey: #252525;
     --mustard: #ffa400;
@@ -17,12 +17,12 @@
     --light-grey: #4d4d4d;
 }
 
-body{
+body {
     background-color: var(--dark-grey);
     color: #fff;
 }
 
-.backHeader{
+.backHeader {
     width: 100%;
     position: sticky;
     top: 0;
@@ -32,48 +32,49 @@ body{
     z-index: 3;
 }
 
-.logoHeader{
+.logoHeader {
     max-width: 70px;
     min-width: 50px;
 }
 
-.logoHeader>img{
+.logoHeader>img {
     width: 100%;
 }
 
-header{
-    max-width: 1600px;
+header {
+    max-width: 1825px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;    
+    padding: 10px 30px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.home a{
+.home a {
     color: #fff;
 }
 
-.wheels{
+.wheels {
     width: 22px;
     display: flex;
     justify-content: space-around;
 }
 
-.wheel{
+.wheel {
     background-color: #ffa400;
     width: 3px;
     height: 3px;
     border-radius: 50%;
 }
 
-.user, .cart-div{
+.user,
+.cart-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,14 +83,14 @@ header{
     cursor: pointer;
 }
 
-.user-head{
+.user-head {
     background-color: #ffa400;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
-.cart{
+.cart {
     display: flex;
     flex-direction: column;
     background-color: var(--medium-grey);
@@ -99,20 +100,20 @@ header{
     right: 0;
     justify-content: center;
     align-items: center;
-    width:350px;
+    width: 350px;
     transition: all .4s ease-in;
     transform: translate(150%);
     padding: 20px;
     gap: 15px;
-    border-bottom-left-radius:5px;
+    border-bottom-left-radius: 5px;
 }
 
-.open-cart{
+.open-cart {
     transition: all .3s ease-in-out;
     transform: translate(0);
 }
 
-.see-blur{
+.see-blur {
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -122,7 +123,7 @@ header{
     position: absolute;
 }
 
-.see-blur::after{
+.see-blur::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -131,7 +132,7 @@ header{
 
 }
 
-.to-left{
+.to-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,10 +141,10 @@ header{
     width: 310px;
 }
 
-.btn-close{
+.btn-close {
     width: 18px;
     height: 18px;
-    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 161, 0, 1) 0%, rgba(251, 16, 61, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,36 +152,36 @@ header{
     cursor: pointer;
 }
 
-.btn-close img{
+.btn-close img {
     width: 7px;
     position: relative;
     bottom: 1px;
     right: 1px;
 }
 
-.cart h3{
+.cart h3 {
     font-weight: 400;
     font-size: 19px;
 }
 
-.cart p{
+.cart p {
     font-weight: 400;
     font-size: 12px;
 }
 
-.cart-divider{
+.cart-divider {
     width: 320px;
     height: 1px;
     background-color: var(--light-grey);
 }
 
-.delivery-line{
+.delivery-line {
     width: 290px;
     display: flex;
     justify-content: space-between;
 }
 
-.cart-bottom{
+.cart-bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,10 +189,10 @@ header{
     gap: 9px;
 }
 
-.btn-buy{
+.btn-buy {
     appearance: none;
     padding: 12px;
-    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 161, 0, 1) 0%, rgba(251, 16, 61, 1) 100%);
     border-radius: 10px;
     font-size: 10px;
     font-weight: 600;
@@ -201,14 +202,14 @@ header{
     cursor: pointer;
 }
 
-.more-products{
+.more-products {
     font-size: 10px;
     font-weight: 400;
     color: var(--light-grey);
     cursor: pointer;
 }
 
-.shoping-list{
+.shoping-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -216,7 +217,7 @@ header{
     align-items: center;
 }
 
-.cart-product{
+.cart-product {
     display: flex;
     padding: 15px;
     align-items: center;
@@ -227,33 +228,34 @@ header{
     box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 30%);
 }
 
-.cart-prod-img{
+.cart-prod-img {
     width: 60px;
     height: 60px;
     border-radius: 15px;
 }
 
-.cart-prod-img img{
+.cart-prod-img img {
     height: 100%;
     width: 100%;
 }
+
 /*   no puedo hacer que no se deformen las fotos sin ponerlas desde el url aca en css, lo que nos complica en js, alguno sabe como? 
 sino es en los assets tener las versiones rectangulares y las cuadradas de cada foto y en js vincularlas con diferentes ${}   */
 
-.cart-product-data{
+.cart-product-data {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.cart-product-data h6{
+.cart-product-data h6 {
     font-size: 11px;
     font-weight: 400;
     color: #606060;
 }
 
-.cart-product-data span{
+.cart-product-data span {
     font-size: 72px;
     background: -webkit-linear-gradient(0deg, #ffa100, #fb103d);
     -webkit-background-clip: text;
@@ -262,48 +264,152 @@ sino es en los assets tener las versiones rectangulares y las cuadradas de cada 
     font-weight: 700;
 }
 
-.quantity-regulator{
+.quantity-regulator {
     display: flex;
     gap: 10px;
 }
 
-.quantity-handler{
+.quantity-handler {
     width: 20px;
     height: 20px;
     border-radius: 6px;
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
-    color: #fff;   
+    background: linear-gradient(90deg, rgba(255, 161, 0, 1) 0%, rgba(251, 16, 61, 1) 100%);
+    color: #fff;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inactive{
-    background: linear-gradient(90deg, rgba(58,48,33,1) 0%, rgba(58,34,41,1) 100%);
+.inactive {
+    background: linear-gradient(90deg, rgba(58, 48, 33, 1) 0%, rgba(58, 34, 41, 1) 100%);
 }
 
-.inactive p{
+.inactive p {
     background: -webkit-linear-gradient(0deg, #ffa100, #fb103d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.quantity-regulator p{
+.quantity-regulator p {
     font-size: 13px;
     font-weight: 300;
 }
 
-.quantity-regulator .down p{
+.quantity-regulator .down p {
     font-size: 24px;
     font-weight: 500;
     position: relative;
     bottom: 2px;
 }
-.quantity-regulator .up p{
+
+.quantity-regulator .up p {
     font-size: 18px;
     font-weight: 400;
 }
 
 /* Fin header */
+
+/* Main  */
+.contenedorMain {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1825px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+
+}
+
+.tituloInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 30px;
+    gap: 10px;
+    padding-left: 85px;
+    padding-top: 69px;
+}
+
+.tituloInfo p {
+    font-size: 20px;
+}
+
+.tituloInfo button {
+    font-size: 20px;
+}
+
+.imgPrincipal {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.pizzaLogo1 {
+    position: absolute;
+    height: 265px;
+    width: 265px;
+    top: 110px;
+    right: 258px;
+    z-index: 1;
+}
+
+.pizzaLogo2 {
+    position: absolute;
+    /* height: 200px; */
+    width: 392px;
+    z-index: 2;
+    right: 0px;
+    /* top: 1px; */
+}
+
+.recomendaciones {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recom-txt {
+    top: 1px;
+    width: 100%;
+    text-align: start;
+    padding-left: 85px;
+}
+
+
+.contenedorRecomendaciones {
+    width: 90%;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+
+}
+
+.recomendaciones-fix {
+    height: 110px;
+    width: 400px;
+    gap: 10px;
+}
+
+.recomendado-btn {
+    width: 20%;
+}
+
+.recom-img-fix {
+    width: 126px;
+    height: 82px;
+}

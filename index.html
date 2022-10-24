@@ -2,43 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NucbaZappi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NucbaZappi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <!-- Header -->
- <div class="backHeader">
+  <!-- Header -->
+  <div class="backHeader">
     <header>
-        <div class="logoHeader">
-          <a href="index.html"></a>
-          <img src="./Assets/nucbazappiicon 1.png"  alt="NucbaZappi logo">
+      <div class="logoHeader">
+        <a href="index.html"></a>
+        <img src="./Assets/nucbazappiicon 1.png" alt="NucbaZappi logo">
+      </div>
+      <nav class="navbar">
+        <div class="home">
+          <img src="./Assets/Iconly/Bulk/Home.png" alt="" class="home-icon">
+          <a href="index.html">Home</a>
         </div>
-        <nav class="navbar">
-          <div class="home">
-            <img src="./Assets/Iconly/Bulk/Home.png" alt="" class="home-icon">
-            <a href="index.html">Home</a>
+        <div class="cart-div">
+          <div class="cart-quantity"></div>
+          <img src="./Assets/Iconly/Bulk/Fill 7.png" class="cart-icon" alt="">
+          <div class="wheels">
+            <div class="wheel"></div>
+            <div class="wheel"></div>
           </div>
-          <div class="cart-div">
-            <div class="cart-quantity"></div>
-            <img src="./Assets/Iconly/Bulk/Fill 7.png" class="cart-icon" alt="">
-            <div class="wheels">
-              <div class="wheel"></div>
-              <div class="wheel"></div>
-            </div>
-          </div>
-          
-          <div class="cart">
-            <div class="to-left">
-              <div class="btn-close close-cart">
-                <img src="./Assets/Check out.png" class="close-cart" alt="">
-              </div>
-              <h3>Tus productos</h3>
+        </div>
 
-              <!-- <div class="shoping-list">
+        <div class="cart">
+          <div class="to-left">
+            <div class="btn-close close-cart">
+              <img src="./Assets/Check out.png" class="close-cart" alt="">
+            </div>
+            <h3>Tus productos</h3>
+
+            <!-- <div class="shoping-list">
                 <div class="product">
                   <div class="cart-prod-img">
                     <img src=${} alt="Producto elegido"/>
@@ -64,75 +64,141 @@
                   </div>
                 </div>                           
               </div> -->
-              <div class="shoping-list">
-                <div class="cart-product">
-                  <div class="cart-prod-img">
-                    <img src="Assets/Photo Menu.png" alt="Producto elegido"/>
+            <div class="shoping-list">
+              <div class="cart-product">
+                <div class="cart-prod-img">
+                  <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+                </div>
+                <div class="cart-product-data">
+                  <p>Tronco-Pizza</p>
+                  <h6>Para todo el día</h6>
+                  <span>$8700</span>
+                </div>
+                <div class="quantity-regulator">
+                  <div class="quantity-handler down inactive" data-id=${id}>
+                    <p>-</p>
                   </div>
-                  <div class="cart-product-data">
-                    <p>Tronco-Pizza</p>
-                    <h6>Para todo el día</h6>
-                    <span>$8700</span>
+                  <p class="item-quantity">1</p>
+                  <div class="quantity-handler up active" data-id=${id}>
+                    <p>+</p>
                   </div>
-                  <div class="quantity-regulator">
-                    <div class="quantity-handler down inactive" data-id=${id}>
-                      <p>-</p>                    
-                    </div>
-                    <p class="item-quantity">1</p>
-                    <div class="quantity-handler up active" data-id=${id}>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div> 
-                <div class="cart-product">
-                  <div class="cart-prod-img">
-                    <img src="Assets/Photo Menu.png" alt="Producto elegido"/>
-                  </div>
-                  <div class="cart-product-data">
-                    <p>Tronco-Pizza</p>
-                    <h6>Para todo el día</h6>
-                    <span>$870</span>
-                  </div>
-                  <div class="quantity-regulator">
-                    <div class="quantity-handler down inactive" data-id=${id}>
-                      <p>-</p>                    
-                    </div>
-                    <p class="item-quantity">1</p>
-                    <div class="quantity-handler up active" data-id=${id}>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>                               
+                </div>
               </div>
+              <div class="cart-product">
+                <div class="cart-prod-img">
+                  <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+                </div>
+                <div class="cart-product-data">
+                  <p>Tronco-Pizza</p>
+                  <h6>Para todo el día</h6>
+                  <span>$870</span>
+                </div>
+                <div class="quantity-regulator">
+                  <div class="quantity-handler down inactive" data-id=${id}>
+                    <p>-</p>
+                  </div>
+                  <p class="item-quantity">1</p>
+                  <div class="quantity-handler up active" data-id=${id}>
+                    <p>+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            </div>
-            <div class="delivery-line">
-              <p>Subtotal:</p>
-              <p class="subtotal"></p>
-            </div>
-            <div class="delivery-line">
-              <p>Envio:</p>
-              <p>Gratis</p>
-            </div>
-            <div class="cart-divider"></div>
-            <div class="delivery-line">
-              <h3>Total:</h3>
-              <span class="total"></span>
-            </div>
-            <div class="cart-bottom">
-              <button class="btn-buy">COMPRAR</button>
-              <p class="more-products close-cart">Ver más productos</p>
-            </div>
-            </div>
-          <div class="user">
-            <div class="user-head"></div>
-            <img src="./Assets/Fill 1.png" alt="" class="user-icon">         
-          </div>                  
-        </nav>        
+          </div>
+          <div class="delivery-line">
+            <p>Subtotal:</p>
+            <p class="subtotal"></p>
+          </div>
+          <div class="delivery-line">
+            <p>Envio:</p>
+            <p>Gratis</p>
+          </div>
+          <div class="cart-divider"></div>
+          <div class="delivery-line">
+            <h3>Total:</h3>
+            <span class="total"></span>
+          </div>
+          <div class="cart-bottom">
+            <button class="btn-buy">COMPRAR</button>
+            <p class="more-products close-cart">Ver más productos</p>
+          </div>
+        </div>
+        <div class="user">
+          <div class="user-head"></div>
+          <img src="./Assets/Fill 1.png" alt="" class="user-icon">
+        </div>
+      </nav>
     </header>
-    <div class="blur"></div>  
-</div>
-<!-- Header end-->
+    <div class="blur"></div>
+
+
+  </div>
+  <!-- Header end-->
+
+  <!-- Main Start -->
+  <div class="contenedorMain">
+    <main>
+      <div class="tituloInfo">
+        <h1> Si tenes Zappi,</h1>
+        <h2>tenes Nucba.</h2>
+        <p>Busca lo que quieras y Nucba te quedas sin comida</p>
+        <button class="btn-buy"> ver mas</button>
+      </div>
+      <div class="imgPrincipal ">
+        <img src="./Assets/image 34.png" class="pizzaLogo1" alt="">
+        <img src="./Assets/pizza 1.png" class="pizzaLogo2" alt="">
+      </div>
+      <div class="recomendaciones">
+        <div class="recom-txt">
+          <p>Hoy te recomendamos</p>
+        </div>
+
+        <div class="contenedorRecomendaciones">
+
+          <div class="cart-product recomendaciones-fix">
+            <div class="cart-prod-img recom-img-fix">
+              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+            </div>
+            <div class="cart-product-data">
+              <p>Tronco-Pizza</p>
+              <h6>Para todo el día</h6>
+              <span>$870</span>
+            </div>
+            <button class="btn-buy recomendado-btn">Agregar</button>
+          </div>
+          <div class="cart-product recomendaciones-fix">
+            <div class="cart-prod-img recom-img-fix">
+              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+            </div>
+            <div class="cart-product-data">
+              <p>Tronco-Pizza</p>
+              <h6>Para todo el día</h6>
+              <span>$870</span>
+            </div>
+            <button class="btn-buy recomendado-btn">Agregar</button>
+          </div>
+          <div class="cart-product recomendaciones-fix">
+            <div class="cart-prod-img recom-img-fix">
+              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+            </div>
+            <div class="cart-product-data">
+              <p>Tronco-Pizza</p>
+              <h6>Para todo el día</h6>
+              <span>$870</span>
+            </div>
+            <button class="btn-buy recomendado-btn">Agregar</button>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Main End -->
 </body>
 <script src="index.js"></script>
 

@@ -30,6 +30,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
+    background-color: var(--dark-grey);
+
 }
 
 .logoHeader {
@@ -91,7 +93,7 @@ header {
 }
 
 .cart {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: var(--medium-grey);
     z-index: 4;
@@ -313,7 +315,7 @@ sino es en los assets tener las versiones rectangulares y las cuadradas de cada 
 
 /* Main  */
 .contenedorMain {
-    height: 30rem;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -333,7 +335,6 @@ main {
 .tituloInfo {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 50%;
     font-size: 30px;
     gap: 10px;
@@ -351,7 +352,6 @@ main {
 
 .imgPrincipal {
     position: relative;
-    height: 100%;
     width: 50%;
 }
 
@@ -395,6 +395,7 @@ main {
     width: 90%;
     display: flex;
     gap: 90px;
+
     justify-content: center;
 
 }
@@ -403,6 +404,7 @@ main {
     height: 110px;
     width: 400px;
     gap: 10px;
+    background-color: #252525;
 }
 
 .recomendado-btn {
@@ -412,4 +414,50 @@ main {
 .recom-img-fix {
     width: 126px;
     height: 82px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias {
+    height: 400px;
+    width: 83vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categoriasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.categoriasCard {
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 170px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.categoriasCard button {
+    height: 4px;
+    width: 30px;
+    background: linear-gradient(90deg, rgba(255, 161, 0, 1) 0%, rgba(251, 16, 61, 1) 100%);
+    border: none;
+    border-radius: 3px;
 }

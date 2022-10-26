@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NucbaZappi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NucbaZappi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <div class="backHeader">
-    <header>
-      <div class="logoHeader">
-        <a href="index.html"></a>
-        <img src="./Assets/nucbazappiicon 1.png" alt="NucbaZappi logo">
-      </div>
-      <nav class="navbar">
-        <div class="home">
-          <img src="./Assets/Iconly/Bulk/Home.png" alt="" class="home-icon">
-          <a href="index.html">Home</a>
+  <body>
+    <!-- Header -->
+    <div class="backHeader">
+      <header>
+        <div class="logoHeader">
+          <a href="index.html"></a>
+          <img src="./Assets/nucbazappiicon 1.png" alt="NucbaZappi logo" />
         </div>
-        <div class="cart-div">
-          <div class="cart-quantity"></div>
-          <img src="./Assets/Iconly/Bulk/Fill 7.png" class="cart-icon" alt="">
-          <div class="wheels">
-            <div class="wheel"></div>
-            <div class="wheel"></div>
+        <nav class="navbar">
+          <div class="home">
+            <img src="./Assets/Iconly/Bulk/Home.png" alt="" class="home-icon" />
+            <a href="index.html">Home</a>
           </div>
-        </div>
-
-        <div class="cart">
-          <div class="to-left">
-            <div class="btn-close close-cart">
-              <img src="./Assets/Check out.png" class="close-cart" alt="">
+          <div class="cart-div">
+            <div class="cart-quantity"></div>
+            <img
+              src="./Assets/Iconly/Bulk/Fill 7.png"
+              class="cart-icon"
+              alt=""
+            />
+            <div class="wheels">
+              <div class="wheel"></div>
+              <div class="wheel"></div>
             </div>
-            <h3>Tus productos</h3>
+          </div>
 
-            <!-- <div class="shoping-list">
+          <div class="cart">
+            <div class="to-left">
+              <div class="btn-close close-cart">
+                <img src="./Assets/Check out.png" class="close-cart" alt="" />
+              </div>
+              <h3>Tus productos</h3>
+
+              <!-- <div class="shoping-list">
                 <div class="product">
                   <div class="cart-prod-img">
                     <img src=${} alt="Producto elegido"/>
@@ -64,190 +67,339 @@
                   </div>
                 </div>                           
               </div> -->
-            <div class="shoping-list">
-              <div class="cart-product">
-                <div class="cart-prod-img">
-                  <img src="Assets/Photo Menu.png" alt="Producto elegido" />
-                </div>
-                <div class="cart-product-data">
-                  <p>Tronco-Pizza</p>
-                  <h6>Para todo el día</h6>
-                  <span>$8700</span>
-                </div>
-                <div class="quantity-regulator">
-                  <div class="quantity-handler down inactive" data-id=${id}>
-                    <p>-</p>
+              <div class="shoping-list">
+                <div class="cart-product">
+                  <div class="cart-prod-img">
+                    <img src="Assets/Photo Menu-8.png" alt="Producto elegido" />
                   </div>
-                  <p class="item-quantity">1</p>
-                  <div class="quantity-handler up active" data-id=${id}>
-                    <p>+</p>
+                  <div class="cart-product-data">
+                    <p>Bennazianna</p>
+                    <h6>La más completa</h6>
+                    <span>$3650</span>
+                  </div>
+                  <div class="quantity-regulator">
+                    <div class="quantity-handler down inactive" data-id="${id}">
+                      <p>-</p>
+                    </div>
+                    <p class="item-quantity">1</p>
+                    <div class="quantity-handler up active" data-id="${id}">
+                      <p>+</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-product">
+                  <div class="cart-prod-img">
+                    <img src="Assets/Photo Menu-9.png" alt="Producto elegido" />
+                  </div>
+                  <div class="cart-product-data">
+                    <p>Tronco-Pizza</p>
+                    <h6>Para todo el día</h6>
+                    <span>$870</span>
+                  </div>
+                  <div class="quantity-regulator">
+                    <div class="quantity-handler down inactive" data-id="${id}">
+                      <p>-</p>
+                    </div>
+                    <p class="item-quantity">1</p>
+                    <div class="quantity-handler up active" data-id="${id}">
+                      <p>+</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="cart-product">
-                <div class="cart-prod-img">
-                  <img src="Assets/Photo Menu.png" alt="Producto elegido" />
-                </div>
-                <div class="cart-product-data">
-                  <p>Tronco-Pizza</p>
-                  <h6>Para todo el día</h6>
-                  <span>$870</span>
-                </div>
-                <div class="quantity-regulator">
-                  <div class="quantity-handler down inactive" data-id=${id}>
-                    <p>-</p>
-                  </div>
-                  <p class="item-quantity">1</p>
-                  <div class="quantity-handler up active" data-id=${id}>
-                    <p>+</p>
-                  </div>
-                </div>
-              </div>
             </div>
-
-          </div>
-          <div class="delivery-line">
-            <p>Subtotal:</p>
-            <p class="subtotal"></p>
-          </div>
-          <div class="delivery-line">
-            <p>Envio:</p>
-            <p>Gratis</p>
-          </div>
-          <div class="cart-divider"></div>
-          <div class="delivery-line">
-            <h3>Total:</h3>
-            <span class="total"></span>
-          </div>
-          <div class="cart-bottom">
-            <button class="btn-buy">COMPRAR</button>
-            <p class="more-products close-cart">Ver más productos</p>
-          </div>
-        </div>
-        <div class="user">
-          <div class="user-head"></div>
-          <img src="./Assets/Fill 1.png" alt="" class="user-icon">
-        </div>
-      </nav>
-    </header>
-    <div class="blur"></div>
-
-
-  </div>
-  <!-- Header end-->
-
-  <!-- Main Start -->
-  <div class="contenedorMain">
-    <main>
-      <div class="tituloInfo">
-        <h1> Si tenes Zappi,</h1>
-        <h2>tenes Nucba.</h2>
-        <p>Busca lo que quieras y Nucba te quedas sin comida</p>
-        <button class="btn-buy"> ver mas</button>
-      </div>
-      <div class="imgPrincipal ">
-        <img src="./Assets/image 34.png" class="pizzaLogo1" alt="">
-        <img src="./Assets/pizza 1.png" class="pizzaLogo2" alt="">
-      </div>
-      <div class="recomendaciones">
-        <div class="recom-txt">
-          <p>Hoy te recomendamos</p>
-        </div>
-
-        <div class="contenedorRecomendaciones">
-
-          <div class="cart-product recomendaciones-fix">
-            <div class="cart-prod-img recom-img-fix">
-              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
+            <div class="delivery-line">
+              <p>Subtotal:</p>
+              <p class="subtotal"></p>
             </div>
-            <div class="cart-product-data">
-              <p>Tronco-Pizza</p>
-              <h6>Para todo el día</h6>
-              <span>$870</span>
+            <div class="delivery-line">
+              <p>Envio:</p>
+              <p>Gratis</p>
             </div>
-            <button class="btn-buy recomendado-btn">Agregar</button>
+            <div class="cart-divider"></div>
+            <div class="delivery-line">
+              <h3>Total:</h3>
+              <span class="total"></span>
+            </div>
+            <div class="cart-bottom">
+              <button class="btn-buy">COMPRAR</button>
+              <p class="more-products close-cart">Ver más productos</p>
+            </div>
           </div>
-          <div class="cart-product recomendaciones-fix">
-            <div class="cart-prod-img recom-img-fix">
-              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
-            </div>
-            <div class="cart-product-data">
-              <p>Tronco-Pizza</p>
-              <h6>Para todo el día</h6>
-              <span>$870</span>
-            </div>
-            <button class="btn-buy recomendado-btn">Agregar</button>
+          <div class="user">
+            <div class="user-head"></div>
+            <img src="./Assets/Fill 1.png" alt="" class="user-icon" />
           </div>
-          <div class="cart-product recomendaciones-fix">
-            <div class="cart-prod-img recom-img-fix">
-              <img src="Assets/Photo Menu.png" alt="Producto elegido" />
-            </div>
-            <div class="cart-product-data">
-              <p>Tronco-Pizza</p>
-              <h6>Para todo el día</h6>
-              <span>$870</span>
-            </div>
-            <button class="btn-buy recomendado-btn">Agregar</button>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </main>
-  </div>
-
-  <section>
-
-    <div class="categorias">
-      <h4>Categorias</h4>
-      <div class="categoriasContainer">
-
-        <div class="categoriasCard">
-          <img src="./Assets/pizza 2.png" alt="">
-          <p>Populares</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/image 34-1.png" alt="">
-          <p>pizzas</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/burger 1.png" alt="">
-          <p>Hamburguesas</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/fries 2.png" alt="">
-          <p>Napapuki</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/buritto 1.png" alt="">
-          <p>Wraps</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/taco 1.png" alt="">
-          <p>Mexican Food</p>
-          <button></button>
-        </div>
-        <div class="categoriasCard">
-          <img src="./Assets/float 1.png" alt="">
-          <p>Batidos</p>
-          <button></button>
-        </div>
-
-
-      </div>
-
+        </nav>
+      </header>
+      <div class="blur"></div>
     </div>
-  </section>
+    <!-- Header end-->
 
-  <!-- Main End -->
-</body>
-<script src="index.js"></script>
+    <!-- Main Start -->
+    <main>
+      <section>
+        <div class="hero">
+          <div class="tituloInfo">
+            <h1>Si tenes Zappi,</h1>
+            <h2>tenes Nucba.</h2>
+            <p>Buscá lo que quieras y nucba te quedes sin comida</p>
+            <button class="btn-buy">ver más</button>
+          </div>
+          <div class="imgPrincipal">
+            <img src="./Assets/pizzas.png" alt="" />
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <div class="recomendaciones">
+          <p>Hoy te recomendamos</p>
+          <div class="contenedorRecomendaciones">
+            <div class="cart-product recomendaciones-fix">
+              <div class="cart-prod-img recom-img-fix">
+                <img src="Assets/Photo Menu-8.png" alt="Producto elegido" />
+              </div>
+              <div class="cart-product-data recomendaciones-data">
+                <p>Bennazianna</p>
+                <h6>La más completa</h6>
+                <span>$3650</span>
+              </div>
+              <button class="btn-buy recomendado-btn">Agregar</button>
+            </div>
+            <div class="cart-product recomendaciones-fix">
+              <div class="cart-prod-img recom-img-fix">
+                <img src="Assets/Photo Menu-9.png" alt="Producto elegido" />
+              </div>
+              <div class="cart-product-data recomendaciones-data">
+                <p>Tronco-Pizza</p>
+                <h6>Para todo el día</h6>
+                <span>$870</span>
+              </div>
+              <button class="btn-buy recomendado-btn">Agregar</button>
+            </div>
+            <div class="cart-product recomendaciones-fix">
+              <div class="cart-prod-img recom-img-fix">
+                <img src="Assets/Photo Menu-10.png" alt="Producto elegido" />
+              </div>
+              <div class="cart-product-data recomendaciones-data">
+                <p>Papas | Provenzal</p>
+                <h6>Van como piña</h6>
+                <span>$360</span>
+              </div>
+              <button class="btn-buy recomendado-btn">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="categorias">
+          <h4>Categorías</h4>
+          <div class="categoriasContainer">
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/pizza 2.png" alt="" />
+              </div>
+              <p>Populares</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/image 34-1.png" alt="" />
+              </div>
+              <p>Pizzas</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/burger 1.png" alt="" />
+              </div>
+              <p>Hamburguesas</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/fries 2.png" alt="" />
+              </div>
+              <p>Napapuki</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/buritto 1.png" alt="" />
+              </div>
+              <p>Wraps</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/taco 1.png" alt="" />
+              </div>
+              <p>Mexican Food</p>
+              <button></button>
+            </div>
+            <div class="categoriasCard">
+              <div class="categoriasCardImg">
+                <img src="./Assets/float 1.png" alt="" />
+              </div>
+              <p>Batidos</p>
+              <button></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Popular Products -->
+    <section>
+      <div class="popular-products">
+        <h4>Los más populares</h4>
+        <div class="popular-products-container">
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>La Mr. Pit</p>
+                <h6>Solo para expertos</h6>
+                <span>$350</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-1.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>¡Q'Jamone!</p>
+                <h6>c/jamón crudo</h6>
+                <span>$350</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-2.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>La Charly García</p>
+                <h6>¡BASTA!</h6>
+                <span>$380</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-3.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>La Maradona</p>
+                <h6>¡Eterna!</h6>
+                <span>$450</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-4.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>Picantovich</p>
+                <h6>Pica dos veces</h6>
+                <span>$750</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-5.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>La Hasbulla</p>
+                <h6>En honor al 1</h6>
+                <span>$990</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu-6.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>Leo Messi</p>
+                <h6>¡De pie señores!</h6>
+                <span>$10</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-products-card">
+            <div class="popular-products-img">
+              <img src="./Assets/Photo Menu.png" alt="" />
+            </div>
+            <div class="popular-products-data-container">
+              <div class="popular-products-data">
+                <p>La Mr. Pit</p>
+                <h6>Solo para expertos</h6>
+                <span>$350</span>
+              </div>
+              <div class="popular-products-btn-container">
+                <button class="btn-buy popular-products-btn">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-data">
+          <p>Términos de uso</p>
+          <p>Trabaja con nosotros</p>
+          <p>Soporte</p>
+        </div>
+        <div class="footer-description">
+          <p>Hecho con ❤️ en <span>NUCBAZAPPI</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
 </html>

@@ -451,6 +451,10 @@ section {
     border-radius: 3px;
 }
 
+.active {
+    background-color: #606060;
+}
+
 /* Fin de Categorías */
 
 /*Popular Products */

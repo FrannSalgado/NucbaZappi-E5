@@ -38,8 +38,41 @@ const closeOnScroll = () => {
 //Falta logica de carrito//
 
 //Renderizar Productos--
-const renderProductos = (numero) => {
 
+const renderPizza = () => {
+  pizzasBtn.classList.toggle("active")
+  renderProductos(0)
+}
+const renderBurger = () => {
+  burgerBtn.classList.toggle("active")
+  renderProductos(1)
+}
+const renderPapas = () => {
+  papasBtn.classList.toggle("active")
+  renderProductos(2)
+}
+const renderWraps = () => {
+  wrapsBtn.classList.toggle("active")
+  renderProductos(3)
+}
+const renderMxFood = () => {
+  MxFoodBtn.classList.toggle("active")
+  renderProductos(4)
+}
+const renderMilkShakes = () => {
+  batidosBtn.classList.toggle("active")
+  renderProductos(5)
+}
+
+const renderPopulares = () => {
+  popularesBtn.classList.toggle("active")
+  renderProductos(6)
+}
+
+
+
+const renderProductos = (numero) => {
+  productoContainer.innerHTML = ``;
   productos[numero].map(iterador => {
 
     const producto = `<div class="popular-products-card">
@@ -62,7 +95,7 @@ const renderProductos = (numero) => {
 
 
 
-  whoActive()
+  // whoActive()
 
 
 }
@@ -102,16 +135,16 @@ const init = () => {
   cartBtn.addEventListener("click", toggleCart);
   cartMenu.addEventListener("click", closeCart);
   window.addEventListener("scroll", closeOnScroll);
-  pizzasBtn.addEventListener("click", renderProductos);
-  popularesBtn.addEventListener("click", renderProductos);
-  burgerBtn.addEventListener("click", renderProductos);
-  papasBtn.addEventListener("click", renderProductos);
-  wrapsBtn.addEventListener("click", renderProductos);
-  MxFoodBtn.addEventListener("click", renderProductos);
-  batidosBtn.addEventListener("click", renderProductos);
+  pizzasBtn.addEventListener("click", renderPizza);
+  popularesBtn.addEventListener("click", renderPopulares);
+  burgerBtn.addEventListener("click", renderBurger);
+  papasBtn.addEventListener("click", renderPapas);
+  wrapsBtn.addEventListener("click", renderWraps);
+  MxFoodBtn.addEventListener("click", renderMxFood);
+  batidosBtn.addEventListener("click", renderMilkShakes);
 
   console.log(productos)
-  renderProductos(5);
+  renderProductos(2);
 };
 
 init();

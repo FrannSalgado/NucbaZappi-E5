@@ -173,10 +173,10 @@ const papas = [
     },
 
     {
-        id: 0,
+        id: 2,
         nombre: "Papas Rusticas",
         descripcion: "Clasicos",
-        img: "Assets/papas/pRusticas",
+        img: "Assets/papas/pRusticas.png",
         precio: 550,
         popularidad: false,
 

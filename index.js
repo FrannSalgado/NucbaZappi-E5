@@ -38,7 +38,29 @@ const closeOnScroll = () => {
 //Falta logica de carrito//
 
 //Renderizar Productos--
-const renderProductos = () => {
+const renderProductos = (numero) => {
+
+  productos[numero].map(iterador => {
+
+    const producto = `<div class="popular-products-card">
+   <div class="popular-products-img">
+   <img src=${iterador.img} alt="" />
+   </div>
+  <div class="popular-products-data-container">
+   <div class="popular-products-data">
+     <p>${iterador.nombre}</p>
+     <h6>${iterador.descripcion}</h6>
+     <span> $${iterador.precio}</span>
+   </div>
+   <div class="popular-products-btn-container">
+     <button class="btn-buy popular-products-btn">Agregar</button>
+   </div>
+ </div>
+</div>`
+    productoContainer.innerHTML += (producto);
+  })
+
+
 
   whoActive()
 
@@ -89,6 +111,7 @@ const init = () => {
   batidosBtn.addEventListener("click", renderProductos);
 
   console.log(productos)
+  renderProductos(5);
 };
 
 init();

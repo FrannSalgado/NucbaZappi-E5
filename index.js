@@ -31,6 +31,8 @@ const closeCart = (e) => {
 
 const closeOnScroll = () => {
   if (!cartMenu.classList.contains("open-cart")) return;
+  cartMenu.style.display = "none";
+
   cartMenu.classList.remove("open-cart");
   backBlur.classList.remove("see-blur");
 };

@@ -5,7 +5,7 @@ const pizzas =
             id: 0,
             nombre: "La Mr.Pit",
             descripcion: "Solo para Expertos",
-            img: "Assets/Mr.pit.png",
+            img: "Assets/pizzas/Mr.pit.png",
             precio: 350,
             popularidad: true,
 
@@ -14,7 +14,7 @@ const pizzas =
             id: 1,
             nombre: "¡Q'Jamone!",
             descripcion: "c/jamón crudo",
-            img: "Assets/Q,jamone.png",
+            img: "Assets/pizzas/Q,jamone.png",
             precio: 400,
             popularidad: true,
 
@@ -23,7 +23,7 @@ const pizzas =
             id: 2,
             nombre: "La Charly García",
             descripcion: "¡BASTA!",
-            img: "Assets/CharliG.png",
+            img: "Assets/pizzas/CharliG.png",
             precio: 500,
             popularidad: true,
 
@@ -33,7 +33,7 @@ const pizzas =
             id: 3,
             nombre: "La Maradona",
             descripcion: "¡Eterna!",
-            img: "Assets/Maradona.png",
+            img: "Assets/pizzas/Maradona.png",
             precio: 650,
             popularidad: true,
 
@@ -43,7 +43,7 @@ const pizzas =
             id: 4,
             nombre: "Picantovich",
             descripcion: "Pica dos veces",
-            img: "Assets/picantovich.png",
+            img: "Assets/pizzas/picantovich.png",
             precio: 700,
             popularidad: true,
 
@@ -53,7 +53,7 @@ const pizzas =
             id: 5,
             nombre: "La Hasbulla",
             descripcion: "En honor al 1",
-            img: "Assets/Hasbulla.png",
+            img: "Assets/pizzas/Hasbulla.png",
             precio: 480,
             popularidad: true,
 
@@ -63,7 +63,7 @@ const pizzas =
             id: 6,
             nombre: "Leo Messi",
             descripcion: "¡De pie señores!",
-            img: "Assets/LeoMessi.png",
+            img: "Assets/pizzas/LeoMessi.png",
             precio: 570,
             popularidad: true,
 
@@ -73,7 +73,7 @@ const pizzas =
             id: 7,
             nombre: "La Nick Gi",
             descripcion: "Solo para expertos",
-            img: "Assets/NickG.png",
+            img: "Assets/pizzas/NickG.png",
             precio: 620,
             popularidad: true,
 
@@ -83,7 +83,7 @@ const pizzas =
             id: 8,
             nombre: "Bennazianna",
             descripcion: "La más completa",
-            img: "Assets/bennazianna.png",
+            img: "Assets/pizzas/bennazianna.png",
             precio: 870,
             popularidad: false,
 
@@ -93,7 +93,7 @@ const pizzas =
             id: 9,
             nombre: "Tronco-Pizza",
             descripcion: "Para todo el día",
-            img: "Assets/troncoPizza.png",
+            img: "Assets/pizzas/troncoPizza.png",
             precio: 940,
             popularidad: false,
 

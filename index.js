@@ -40,40 +40,64 @@ const closeOnScroll = () => {
 //Renderizar Productos--
 
 const renderPizza = () => {
+  whoActive()
+
   pizzasBtn.classList.toggle("active")
-  renderProductos(0)
+
+  renderProductos(productos, 0)
 }
 const renderBurger = () => {
+  whoActive()
+
   burgerBtn.classList.toggle("active")
-  renderProductos(1)
+  renderProductos(productos, 1)
 }
 const renderPapas = () => {
+  whoActive()
+
   papasBtn.classList.toggle("active")
-  renderProductos(2)
+  renderProductos(productos, 2)
 }
 const renderWraps = () => {
+  whoActive()
+
   wrapsBtn.classList.toggle("active")
-  renderProductos(3)
+  renderProductos(productos, 3)
 }
 const renderMxFood = () => {
+  whoActive()
+
   MxFoodBtn.classList.toggle("active")
-  renderProductos(4)
+  renderProductos(productos, 4)
 }
 const renderMilkShakes = () => {
+  whoActive()
+
   batidosBtn.classList.toggle("active")
-  renderProductos(5)
+  renderProductos(productos, 5)
 }
 
 const renderPopulares = () => {
+  whoActive()
+  const productosPopulares = [];
+  const todo = []
+  productos.map(iterador => {
+    iterador.map(esPopular => {
+      if (esPopular.popularidad === true) { todo.push(esPopular) }
+    })
+  })
+
+  productosPopulares.push(todo);
+
   popularesBtn.classList.toggle("active")
-  renderProductos(6)
+  renderProductos(productosPopulares, 0)
 }
 
 
 
-const renderProductos = (numero) => {
+const renderProductos = (array, numero) => {
   productoContainer.innerHTML = ``;
-  productos[numero].map(iterador => {
+  array[numero].map(iterador => {
 
     const producto = `<div class="popular-products-card">
    <div class="popular-products-img">
@@ -95,38 +119,48 @@ const renderProductos = (numero) => {
 
 
 
-  // whoActive()
-
-
 }
 
-// const whoActive = () => {
-//   if (popularesBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (pizzasBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (burgerBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (papasBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (wrapsBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (MxFoodBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
-//   if (batidosBtn.classList.contains("active")) {
-//     return (console.log("sisi"))
-//   }
+const whoActive = () => {
+  if (popularesBtn.classList.contains("active")) {
+    popularesBtn.classList.toggle("active")
+    return
+  }
+  if (pizzasBtn.classList.contains("active")) {
+    pizzasBtn.classList.toggle("active")
 
-//   else {
-//     return (console.log("ERROR"))
-//   }
-// }
+    return
+  }
+  if (burgerBtn.classList.contains("active")) {
+    burgerBtn.classList.toggle("active")
+
+    return
+  }
+  if (papasBtn.classList.contains("active")) {
+    papasBtn.classList.toggle("active")
+
+    return
+  }
+  if (wrapsBtn.classList.contains("active")) {
+    wrapsBtn.classList.toggle("active")
+
+    return
+  }
+  if (MxFoodBtn.classList.contains("active")) {
+    MxFoodBtn.classList.toggle("active")
+
+    return
+  }
+  if (batidosBtn.classList.contains("active")) {
+    batidosBtn.classList.toggle("active")
+
+    return
+  }
+
+  else {
+    return (console.log("ERROR"))
+  }
+}
 
 
 
@@ -142,9 +176,7 @@ const init = () => {
   wrapsBtn.addEventListener("click", renderWraps);
   MxFoodBtn.addEventListener("click", renderMxFood);
   batidosBtn.addEventListener("click", renderMilkShakes);
-
-  console.log(productos)
-  renderProductos(2);
+  renderPopulares()
 };
 
 init();

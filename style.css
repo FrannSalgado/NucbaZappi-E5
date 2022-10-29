@@ -490,7 +490,10 @@ section {
 }
 
 .popular-products-img img {
-    width: 100%;
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+
 }
 
 .popular-products-data-container {

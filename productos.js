@@ -189,7 +189,7 @@ const wraps = [
         id: 0,
         nombre: "Carne",
         descripcion: "Clasico",
-        img: "Assets/wraps/Wcarne.jpg",
+        img: "Assets/wraps/Wcarne.png",
         precio: 350,
         popularidad: true,
 
@@ -198,7 +198,7 @@ const wraps = [
         id: 1,
         nombre: "Picante",
         descripcion: "Duele",
-        img: "Assets/wraps/Wpicante.jpg",
+        img: "Assets/wraps/Wpicante.png",
         precio: 550,
         popularidad: false,
 
@@ -207,7 +207,7 @@ const wraps = [
         id: 2,
         nombre: "Pollo",
         descripcion: "Pollito",
-        img: "Assets/wraps/Wpollo.jpg",
+        img: "Assets/wraps/Wpollo.png",
         precio: 670,
         popularidad: false,
 
@@ -216,7 +216,7 @@ const wraps = [
         id: 3,
         nombre: "Vegi",
         descripcion: "Yuyos",
-        img: "Assets/wraps/Wvegetales.jpg",
+        img: "Assets/wraps/Wvegetales.png",
         precio: 450,
         popularidad: false,
 
@@ -265,7 +265,7 @@ const milShakes = [
 
     },
     {
-        id: 0,
+        id: 1,
         nombre: "Cooki",
         descripcion: "Clasico",
         img: "Assets/MilkS/MScockies.png",
@@ -273,9 +273,9 @@ const milShakes = [
         popularidad: false,
 
     }, {
-        id: 0,
+        id: 2,
         nombre: "Oreo",
-        descripcion: "",
+        descripcion: "Infaltable",
         img: "Assets/MilkS/MSoreo.png",
         precio: 350,
         popularidad: false,
@@ -285,3 +285,4 @@ const milShakes = [
 
 
 export const productos = [pizzas, hamburgesas, papas, wraps, mexicanFood, milShakes]
+
